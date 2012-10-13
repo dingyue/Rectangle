@@ -1,20 +1,26 @@
-
+//Understands that it has four sides with four right angles
 public class Rectangle {
-    //Understands that rectangle have four sides and four right angles
-    private int lenght, width;
+    private int length, width;
 
-    public Rectangle(int width, int lenght) {
+    public Rectangle(int width, int length) {
         this.width = width;
-        this.lenght = lenght;
+        this.length = length;
     }
 
-    public int calcArea(){
-        return width * lenght;
+    public int calcArea() {
+        return width * length;
     }
 
     public int calcPerimeter() {
-        return 2 * (width + lenght);
+        return 2 * (width + length);
+    }
 
 
+    public int getLength() {
+        return length;
+    }
+
+    public int getWidth() {
+        return width;
     }
 }
